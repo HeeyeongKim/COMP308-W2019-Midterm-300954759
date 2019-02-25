@@ -1,5 +1,5 @@
 /*
-  <user.js>
+  <users.js>
   COMP308-W2019-Midterm
   Student Number: 300954759
   Stduent Name: Heeyeong Kim
@@ -46,7 +46,6 @@ let userSchema = mongoose.Schema(
 );
 
 // configure options for the UserSchema
-
 let options = ({
     missingPasswordError: "Wrong / Missing Password"
 });
