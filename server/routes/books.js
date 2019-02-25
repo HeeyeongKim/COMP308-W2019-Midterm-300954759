@@ -1,3 +1,11 @@
+/*
+  <books.js>
+  COMP308-W2019-Midterm
+  Student Number: 300954759
+  Stduent Name: Heeyeong Kim
+  Date: 02/24/2019
+*/
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -41,7 +49,7 @@ router.post('/add', (req, res, next) => {
     "Genre": req.body.genre
   });
 
-  // create book using book model
+  // add book object to db using book model
   book.create(newBook, (err, book) => {
     if (err) {
       console.log(err);
@@ -86,7 +94,7 @@ router.post('/:id', (req, res, next) => {
     "Genre": req.body.genre
   });
 
-  // update book using book model
+  // update db using book model
   book.update({ _id: id }, updatedBook, (err) => {
     if (err) {
       console.log(err);
@@ -99,11 +107,17 @@ router.post('/:id', (req, res, next) => {
 
 // GET - process the delete by user id
 router.get('/delete/:id', (req, res, next) => {
+  let id = req.params.id;
 
-  /*****************
-   * ADD CODE HERE *
-   *****************/
+  // remove book object from db using book model
+  book.remove({ _id: id }, (err) => {
+      if (err) {
+          console.log(err);
+          res.end(err);
+      } else {
+          res.redirect('/books');
+      }
+  });
 });
-
 
 module.exports = router;
