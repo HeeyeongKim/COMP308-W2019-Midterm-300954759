@@ -2,7 +2,7 @@
   <users.js>
   COMP308-W2019-Midterm
   Student Number: 300954759
-  Stduent Name: Heeyeong Kim
+  Student Name: Heeyeong Kim
   Date: 02/24/2019
 */
 

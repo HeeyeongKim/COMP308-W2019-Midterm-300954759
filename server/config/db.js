@@ -1,3 +1,11 @@
+/*
+  <db.js>
+  COMP308-W2019-Midterm
+  Student Number: 300954759
+  Student Name: Heeyeong Kim
+  Date: 02/24/2019
+*/
+
 module.exports = {
   //local MongoDB deployment ->
   //"URI": "mongodb://localhost/books308"

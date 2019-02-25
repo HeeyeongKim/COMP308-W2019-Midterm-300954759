@@ -1,3 +1,11 @@
+/*
+  <app.js>
+  COMP308-W2019-Midterm
+  Student Number: 300954759
+  Student Name: Heeyeong Kim
+  Date: 02/24/2019
+*/
+
 // moddules for node and express
 let createError = require('http-errors');
 let express = require('express');

@@ -1,3 +1,11 @@
+/*
+  <books.js>
+  COMP308-W2019-Midterm
+  Student Number: 300954759
+  Student Name: Heeyeong Kim
+  Date: 02/24/2019
+*/
+
 let mongoose = require('mongoose');
 
 // create a model class
